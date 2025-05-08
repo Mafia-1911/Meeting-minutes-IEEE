@@ -1,0 +1,239 @@
+.corner-icon{
+    position:fixed;
+    width:40px;
+    height: auto;
+    z-index: 99;
+}
+.top-left {
+    top: 112px;
+    left: 135px;
+}
+body{
+    background: linear-gradient(90deg,#1fc488,#185d55);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.main{
+    width: 90%;
+    height: auto;
+    margin:90px auto;
+    /* margin-left: 107px;
+    margin-right: 107px;
+    margin-top: 90px;
+    margin-bottom: 90px; */
+
+    display: flex;
+    flex-wrap: wrap;
+    
+    overflow: hidden;
+    border-radius:30px;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    /* border: 2px solid white; */
+
+}
+.main-left,
+.main-right {
+    flex: 1 1 300px; /* grow, shrink, base width */
+    min-width: 250px;
+}
+@media (max-width: 768px) {
+    .main {
+      flex-direction: column;
+      height: auto;
+      justify-content: center;
+    }
+    .main-left{
+        flex:1 1;
+    }
+    .form{
+        
+        transform: translateX(-100px); */
+    }
+}
+/*<-- left side  -->*/
+.main-left{
+    flex:1 1 5px;
+    background-color: #28DD9B;
+    min-width:200px;
+
+}
+.left-img{
+    width:fit-content;
+    padding-left: 150px;
+    transform: translateY(150px);
+}
+/*<-- Right side  -->*/
+.main-right{
+    flex:1 1;
+    min-width: 500px;
+    padding:20px;
+    position: relative;
+    background-color: #092945;
+    display: flex;
+    overflow: hidden;
+    
+}
+.button-container{
+    position: absolute;
+    right: 26px;
+    top: 25px;
+    /* transform: translateX(20px); */
+    margin: 0 auto;
+    height: 46px;
+    width: 195px;
+}
+.pill-btn{
+    flex: 1;
+    border: black;
+    height: 46px;
+    border-radius: 999px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+.sign-up-btn{
+    background-color: #42586C;
+    color: white;
+    width: 95px;
+}
+.sign-up-btn:hover {
+    background-color: #28DD9B;
+    
+}
+
+.log-in-btn{
+    background-color: #42586C;
+    color: white;
+    width: 95px;
+  }
+.log-in-btn:hover {
+    background-color: #28DD9B;
+  }
+
+
+.login-form{
+    display: flex;
+    flex-direction:column;
+    gap: 10px;
+    color: white;
+
+    padding-left:105px;
+    padding-top: 150px;
+    padding-right: 110px;
+    padding-bottom: 125px;;
+}
+.form-name{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+input{
+    background-color:transparent;
+    border-top: transparent;
+    border-right: transparent;
+    border-bottom: 2px solid #2F4B64;
+    color: #28DD9B;
+    padding:8px 0;
+    font-size: 15px;
+    width: 100%;
+}
+input:focus{
+    outline: none;
+    border-bottom: 2px solid white;
+}
+.checkbox-label{
+    display: flex;
+    padding-bottom: 50px;
+    padding-top: 30px;
+}
+/* .form-checkbox{
+    height: 20px;
+    justify-content: flex-start;
+    padding:0;
+    transform: translateX(-90px);
+} */
+ .form-checkbox{
+    flex:0 0 5%;
+    height:23px;
+    margin: 0;
+ }
+.form-agree{
+    padding-left:10px;
+    margin:0;
+    white-space: nowrap;
+}
+.form-terms{
+    color: white;
+    text-decoration: underline;
+    text-decoration-color:#28DD9B;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 4px;
+
+}
+.form-terms:hover{
+    color:cadetblue;
+    text-decoration-color:white;
+    text-decoration-thickness: 2px;
+}
+.form-login{
+    margin-top: 5px;
+    color: white;
+    background-color: #28DD9B;
+    border-radius: 999px;
+    cursor: pointer;
+    font-size: 18px;
+   
+    width:125px;
+    height:40px;
+
+    border: none;
+    z-index: 11;
+   
+}
+.form-login:hover{
+    background-color: #42586C;
+    transition: background-color 0.3s ease;
+}
+.already-member{
+    display: flex;
+    flex-direction: row-reverse;
+    transform: translateY(-58px);
+    
+}
+
+.show-signup,.show-login{
+    color:white;
+    text-decoration-color: #1fc488;
+    text-underline-offset: 5px;
+    text-decoration-thickness: 2px;
+}
+.form-toggle{
+    display: flex;
+    justify-content: right;
+    gap: 5px;
+    padding-bottom: 50px;
+}
+
+.show-signup:hover,.show-login:hover{
+    color:cadetblue;
+    text-decoration-color:white;
+    text-decoration-thickness: 2px;
+}
+.signup-form{
+    display:none;
+    flex-direction: column;
+    justify-content: center;
+    padding-left:100px;
+    color:white;
+}
+.inactive{
+    display: none;
+}
+.active{
+    display:flex;
+}

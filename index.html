@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Icon -->
+    <a href="https://ieeensusb.org/">
+        <img src="assets\INSB.png" alt="Corner Icon" class="corner-icon top-left">
+    </a>
+<!-- Two section -->
+    <div class="main">
+        <div class="main-left">
+            <img class="left-img" width="60%" src="/assets/plane.svg" alt="">
+        </div>
+        <div class="main-right">
+          
+            <div class="button-container">
+                <button class="pill-btn sign-up-btn">Sign Up</button>
+                <button class="pill-btn log-in-btn">Log In</button>
+            </div>
+            
+            <div class="input">
+                <form class="login-form" >
+                    <div class="form-toggle">
+                       <a class="show-signup" href="">Sign Up</a> or <a href=" " class="show-login">Log In</a>
+                    </div>
+
+                    <div class="form-name">
+                    <label  for="name">Full Name</label>
+                    <input  type="text" id="name" name="name" placeholder="Enter your name here">
+                    </div>
+
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Enter password">
+                    
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email address here">
+
+    <label class="checkbox-label">
+        <input class="form-checkbox" type="checkbox" required>
+        <p class="form-agree">
+            I agree with all statements in <a class="form-terms" href="#">Terms and Conditions</a>
+        </p>
+    </label>
+                <button type="submit" class="form-login">Log in</button>
+                <p class="already-member">Already a member?</p>
+                </form>
+
+                <form action="" class="signup-form">
+                    <div class="form-toggle">
+                        <a class="show-signup" href="">Sign Up</a> or <a href=" " class="show-login">Log In</a>
+                     </div>
+ 
+                     <div class="form-name">
+                     <label  for="name">Full Name</label>
+                     <input  type="text" id="name" name="name" placeholder="Enter your name here">
+                     </div>
+ 
+                     <label for="password">Password</label>
+                     <input type="password" id="password" name="password" placeholder="Enter password">
+                     
+                     <label for="email">Email</label>
+                     <input type="email" id="email" name="email" placeholder="Enter your email address here">
+ 
+     <label class="checkbox-label">
+         <input class="form-checkbox" type="checkbox" required>
+         <p class="form-agree">
+             I agree with all statements in <a class="form-terms" href="#">Terms and Conditions</a>
+         </p>
+     </label>
+                 <button type="submit" class="form-login">Sign Up</button>
+                 <p class="already-member">Already a member?</p>
+                    
+                </form>
+            </div>
+
+            
+
+            
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
