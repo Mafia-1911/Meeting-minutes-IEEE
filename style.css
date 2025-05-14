@@ -1,12 +1,19 @@
+body {
+  font-family: Poppins, sans-serif;
+}
 .corner-icon{
-    position:fixed;
-    width:40px;
+    position:absolute;
+    width:70px;
     height: auto;
     z-index: 99;
 }
 .top-left {
-    top: 112px;
-    left: 135px;
+    top: 120px;
+    left: 80px;
+}
+.corner-icon:hover{
+box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transform: scale(1.25);
 }
 body{
     background: linear-gradient(90deg,#1fc488,#185d55);
@@ -36,6 +43,11 @@ body{
     /* border: 2px solid white; */
 
 }
+.main-left{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
 .main-left,
 .main-right {
     flex: 1 1 300px; /* grow, shrink, base width */
@@ -51,8 +63,7 @@ body{
         flex:1 1;
     }
     .form{
-        
-        transform: translateX(-100px); */
+        transform: translateX(-100px);
     }
 }
 /*<-- left side  -->*/
@@ -96,6 +107,12 @@ body{
     font-size: 16px;
     transition: background-color 0.3s ease;
 }
+.svg-icon{
+    width:300px;
+    /* transform:translateX(140px); */
+    transform:translateY(-100px);
+
+}
 .sign-up-btn{
     background-color: #42586C;
     color: white;
@@ -115,14 +132,32 @@ body{
     background-color: #28DD9B;
   }
 
-
+.login-form-text,.signup-form-text{
+    transform: translateY(-70px);
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .10em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
 .login-form{
     display: flex;
     flex-direction:column;
     gap: 10px;
     color: white;
 
-    padding-left:105px;
+    padding-left:10px;
     padding-top: 150px;
     padding-right: 110px;
     padding-bottom: 125px;;
@@ -198,6 +233,8 @@ input:focus{
 .form-login:hover{
     background-color: #42586C;
     transition: background-color 0.3s ease;
+     transform: scale(1.07);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
 }
 .already-member{
     display: flex;
@@ -223,13 +260,24 @@ input:focus{
     color:cadetblue;
     text-decoration-color:white;
     text-decoration-thickness: 2px;
+     transform: scale(1.07);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
 }
 .signup-form{
-    display:none;
+    display: flex;
+    flex-direction:column;
+    gap: 10px;
+    color: white;
+
+    padding-left:10px;
+    padding-top: 150px;
+    padding-right: 110px;
+    padding-bottom: 125px;;
+    /* display:none;
     flex-direction: column;
     justify-content: center;
     padding-left:100px;
-    color:white;
+    color:white; */
 }
 .inactive{
     display: none;
